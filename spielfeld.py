@@ -6,10 +6,10 @@ Modul das die Hauptklasse und Logik des Memoryspiels enthaelt.
 from PyQt5.QtWidgets import QWidget, QTableWidget, QAbstractItemView, QLabel, QMessageBox
 from PyQt5.QtCore import QSize, QTimer
 import random
-# Das Modul für die Karten-Klasse wird importiert
+# Das Modul fÃ¼r die Karten-Klasse wird importiert
 import memorykarte
 
-# eine Klasse für das Spiel
+# eine Klasse fÃ¼r das Spiel
 # sie erbt von QWidget
 class Memoryspiel(QWidget):
     # die magische Methode __init__()
@@ -152,8 +152,9 @@ class Memoryspiel(QWidget):
             self.spieler = 0
 
     def computer_zug(self):
-        # (Logik fuer den Computerzug bleibt hier unveraendert)
+        
         pass
 
     def zug_erlaubt(self):
+
         return self.spieler == 0 and self.umgedrehte_karten < 2
